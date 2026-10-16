@@ -1,6 +1,6 @@
 (() => {
   // ====== CONFIG ======
-  const API_KEY = "Z3NrX3JQckNKTjBxR2dBcUxEMEpRR2tqV0dkeWIzRllIWGE1TkxIUng0RDY4T3M4S3l2eG5DSm4=";
+  const API_KEY = "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";
   const MODEL = "openai/gpt-oss-120b"; // text-only questions
   const VISION_MODEL = "qwen/qwen3.8-27b"; // used when the question has images (fallback: "qwen/qwen3.6-27b")
   const SELECTOR = '[class*="_TextElement_"]';
