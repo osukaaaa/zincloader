@@ -1,6 +1,6 @@
 (() => {
   // ====== CONFIG ======
-  Y29uc3QgQVBJX0tFWSA9ICJXak5PY2xnelNsRmphMDVMVkdwQ2VGSXlaRUpqVlhoRlRVVndVbEl5ZEhGV01HUnJaVmRKZWxKc2JFbFhSMFV4Vkd0NFNWVnVaekJTUkZrMFZETk5ORk16YkRKbFJ6VkVVMjAwUFE9PSI7
+  const API_KEY = "Z3NrX3JQckNKTjBxR2dBcUxEMEpRR2tqV0dkeWIzRllIWGE1TkxIUng0RDY4T3M4S3l2eG5DSm4=";
   const MODEL = "openai/gpt-oss-120b"; // text-only questions
   const VISION_MODEL = "qwen/qwen3.8-27b"; // used when the question has images (fallback: "qwen/qwen3.6-27b")
   const SELECTOR = '[class*="_TextElement_"]';
