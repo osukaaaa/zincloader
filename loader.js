@@ -1,6 +1,6 @@
 (() => {
   // ====== CONFIG ======
-  const API_KEY = "PWo4L3dC3JMsSkqFlF9rsbsxCf9CQ9wwGGrR6GgaQ2HINhvKBpBC6gWFO8Ajv4jCB2VwhohEKtjgOqKjjgyGUOCwSIR3tAw12cpuU0R6TVLRuSYi0bw47RBjGmlPeV+6V/K6Fwzjk7iCObw="; // leave "" to use the encrypted passphrase flow instead
+  const API_KEY = "qt3NaudGez53ktdZQj8xKA7NHIBiknXh+aaBjPz3drFu49xe30pwUnw3MB2g4uDWYOjVoEDlNrqTF2lDO4Z+GpGwp0t4QiDFxWcoZBYI0tiqIacICqET9sSnR0ogkNougMZKXto5UGDa0FA="; // leave "" to use the encrypted passphrase flow instead
   const MODEL = "grok-4.7"; // text-only questions
   const VISION_MODEL = "gemini-3-flash";
   const SELECTOR = '[class*="_TextElement_"]';
