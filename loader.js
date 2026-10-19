@@ -1,8 +1,8 @@
 (() => {
   // ====== CONFIG ======
-  const API_KEY = "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"; // leave "" to use the encrypted passphrase flow instead
-  const MODEL = "openai/gpt-oss-120b"; // text-only questions
-  const VISION_MODEL = "qwen/qwen3.8-27b";
+  const API_KEY = "PWo4L3dC3JMsSkqFlF9rsbsxCf9CQ9wwGGrR6GgaQ2HINhvKBpBC6gWFO8Ajv4jCB2VwhohEKtjgOqKjjgyGUOCwSIR3tAw12cpuU0R6TVLRuSYi0bw47RBjGmlPeV+6V/K6Fwzjk7iCObw="; // leave "" to use the encrypted passphrase flow instead
+  const MODEL = "grok-4.7"; // text-only questions
+  const VISION_MODEL = "gemini-3-flash";
   const SELECTOR = '[class*="_TextElement_"]';
   // ====================
 
