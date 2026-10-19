@@ -447,16 +447,17 @@
       : question;
 
     try {
-      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-        method: "POST",
-        headers: { "content-type": "application/json", authorization: "Bearer " + apiKey },
-        body: JSON.stringify({
-          model: images.length ? VISION_MODEL : MODEL,
-          temperature: 0.1,
-          // Groq's free tier caps the vision model at 1000 output tokens per minute, so keep that request small
-          max_tokens: images.length ? 100 : 4000,
-          ...(images.length ? {} : { reasoning_effort: "high" }),
-          messages: [
+      const headers = { "content-type": "application/json" };
+if (apiKey) headers.authorization = "Bearer " + apiKey;
+
+      const res = await fetch("https://api.llm7.io/v1/chat/completions", {
+          method: "POST",
+            headers,
+              body: JSON.stringify({
+              model: images.length ? VISION_MODEL : MODEL,
+              temperature: 0.1,
+              max_tokens: images.length ? 300 : 2000,
+              }),
             {
               role: "system",
               content:
