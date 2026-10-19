@@ -1,8 +1,8 @@
 (() => {
   // ====== CONFIG ======
-  const API_KEY = "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"; // leave "" to use the encrypted passphrase flow instead
+  const API_KEY = "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"; // leave "" to use the encrypted passphrase flow instead
   const MODEL = "openai/gpt-oss-120b"; // text-only questions
-  const VISION_MODEL = "qwen/qwen3.8-27b"; // used when the question has images (fallback: "qwen/qwen3.6-27b")
+  const VISION_MODEL = "qwen/qwen3.8-27b";
   const SELECTOR = '[class*="_TextElement_"]';
   // ====================
 
@@ -454,7 +454,7 @@
           model: images.length ? VISION_MODEL : MODEL,
           temperature: 0.1,
           // Groq's free tier caps the vision model at 1000 output tokens per minute, so keep that request small
-          max_tokens: images.length ? 700 : 6000,
+          max_tokens: images.length ? 100 : 4000,
           ...(images.length ? {} : { reasoning_effort: "high" }),
           messages: [
             {
