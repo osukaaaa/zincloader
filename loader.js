@@ -458,7 +458,7 @@ if (apiKey) headers.authorization = "Bearer " + apiKey;
               temperature: 0.1,
               max_tokens: images.length ? 300 : 2000,
               }),
-            {
+      }
               role: "system",
               content:
                 "You answer UK school maths questions. The text uses LaTeX between $...$ and may come with " +
